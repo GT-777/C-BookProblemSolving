@@ -1,4 +1,4 @@
-#include "Director.h"
+﻿#include "Director.h"
 
 namespace HR
 {
@@ -9,6 +9,17 @@ namespace HR
 
 	std::string Director::toString()
 	{
-		return "Director";
+		return "Director -> " + Employee::toString();
+	}
+
+	Director* PromoteToDirector(Employee* emp)
+	{
+		if (!emp) return nullptr;
+
+		if (typeid(*emp) == typeid(Director))
+			return nullptr;
+
+
+		return new Director(emp->GetName(), emp->GetAge());
 	}
 }

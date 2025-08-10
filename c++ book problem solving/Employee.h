@@ -13,6 +13,8 @@ namespace HR
 		virtual std::string toString() override;
 		~Employee() override;
 
+		class Manager* manager = nullptr;
+		class Director* director = nullptr;
 	protected:
 		int employeeID;
 		static int nextID;

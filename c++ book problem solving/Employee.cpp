@@ -1,4 +1,8 @@
 #include "Employee.h"
+#include <string>
+#include "Manager.h"
+#include "Director.h"
+
 
 namespace HR
 {
@@ -15,7 +19,7 @@ namespace HR
 
 	std::string Employee::toString()
 	{
-		return "Employee";
+		return Person::toString() + ", EmployeeID: " + std::to_string(employeeID);
 	}
 
 	Employee::~Employee()

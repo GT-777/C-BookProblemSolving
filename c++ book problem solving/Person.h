@@ -12,6 +12,8 @@ namespace HR
 		virtual void Print();
 		virtual ~Person();
 		virtual std::string toString();
+		virtual int GetAge() const { return age; }
+		virtual std::string GetName() const { return name; }
 	protected:
 		int age;
 		std::string name;

@@ -13,6 +13,7 @@ namespace HR
 
 		virtual void Print() override;
 		virtual std::string toString()override;
+
 	};
 }
 

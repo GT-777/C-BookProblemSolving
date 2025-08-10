@@ -1,4 +1,5 @@
 #include "Person.h"
+#include <string>
 
 
 namespace HR
@@ -17,6 +18,6 @@ namespace HR
 
     std::string Person::toString()
     {
-        return "Person";
+        return "Name: " + name + ", Age: " + std::to_string(age);
     }
 }
