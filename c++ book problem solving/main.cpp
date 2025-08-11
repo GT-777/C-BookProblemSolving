@@ -29,27 +29,22 @@ int main()
 
 	Employee* emp = new Employee("Bob", 30);
 
-	
-	Manager* mgr = PromoteToManager(emp);
-	if (mgr != nullptr)
-	{
-		delete emp;  
-		emp = nullptr;
-
+	if (Manager* mgr = PromoteToManager(emp)) {
+		delete emp;
 		std::cout << "Promoted to Manager:\n" << mgr->toString() << std::endl;
+
+		if (Director* dir = PromoteToDirector(mgr)) {
+			delete mgr;
+			std::cout << "Promoted to Director:\n" << dir->toString() << std::endl;
+			delete dir;
+		}
+		else {
+			delete mgr;
+		}
 	}
-
-	
-	Director* dir = PromoteToDirector(mgr);
-	if (dir != nullptr)
-	{
-		delete mgr;  
-		mgr = nullptr;
-
-		std::cout << "Promoted to Director:\n" << dir->toString() << std::endl;
+	else {
+		delete emp;
 	}
-
-	delete dir;
 
 	return 0;
 }
