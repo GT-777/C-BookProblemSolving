@@ -29,7 +29,8 @@ int main()
 
 	Employee* emp = new Employee("Bob", 30);
 
-	if (Manager* mgr = PromoteToManager(emp)) {
+	if (Manager* mgr = PromoteToManager(emp)) 
+	{
 		delete emp;
 		std::cout << "Promoted to Manager:\n" << mgr->toString() << std::endl;
 
@@ -38,11 +39,13 @@ int main()
 			std::cout << "Promoted to Director:\n" << dir->toString() << std::endl;
 			delete dir;
 		}
-		else {
+		else 
+		{
 			delete mgr;
 		}
 	}
-	else {
+	else 
+	{
 		delete emp;
 	}
 
