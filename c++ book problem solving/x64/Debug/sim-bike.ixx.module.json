@@ -1,0 +1,22 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\sim-bike.ixx.obj",
+            "outputs": [
+                "C:\\Users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\x64\\Debug\\sim-bike.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "sim:bike",
+                    "source-path": "c:\\users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\sim-bike.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": []
+        }
+    ]
+}

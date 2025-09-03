@@ -1,0 +1,11 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\simulator.cpp",
+        "ProvidedModule": "",
+        "ImportedModules": [
+            "sim"
+        ],
+        "ImportedHeaderUnits": []
+    }
+}

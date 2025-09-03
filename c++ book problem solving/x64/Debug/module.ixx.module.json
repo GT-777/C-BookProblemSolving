@@ -1,0 +1,44 @@
+{
+    "version": 1,
+    "revision": 0,
+    "rules": [
+        {
+            "primary-output": "x64\\Debug\\Module.ixx.obj",
+            "outputs": [
+                "C:\\Users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\x64\\Debug\\vc143.pdb",
+                "x64\\Debug\\",
+                "C:\\Users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\x64\\Debug\\Module.ixx.ifc"
+            ],
+            "provides": [
+                {
+                    "logical-name": "sim",
+                    "source-path": "c:\\users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\module.ixx",
+                    "is-interface": true
+                }
+            ],
+            "requires": [
+                {
+                    "logical-name": "sim:car"
+                },
+                {
+                    "logical-name": "sim:bike"
+                },
+                {
+                    "logical-name": "sim:keyvaluepair"
+                },
+                {
+                    "logical-name": "iostream",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iostream",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                },
+                {
+                    "logical-name": "concepts",
+                    "source-path": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\concepts",
+                    "lookup-method": "include-angle",
+                    "unique-on-source-path": true
+                }
+            ]
+        }
+    ]
+}

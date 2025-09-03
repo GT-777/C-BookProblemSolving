@@ -1,0 +1,11 @@
+{
+    "Version": "1.1",
+    "Data": {
+        "Source": "c:\\users\\gevor\\source\\repos\\c++ book problem solving\\c++ book problem solving\\simulator.h",
+        "ProvidedModule": "sim",
+        "ImportedModules": [],
+        "ImportedHeaderUnits": [
+            "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\include\\iostream"
+        ]
+    }
+}
